@@ -1,0 +1,38 @@
+/* Estilos para el contenedor de botones */
+.botones {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Alinear los botones en la parte inferior */
+    height: 100vh;
+    background-color: #333; /* Cambiar el color de fondo del piano */
+}
+
+/* Estilos generales para los botones */
+.boton {
+    width: 50px; /* Ancho de cada tecla del piano */
+    height: 150px; /* Altura de cada tecla del piano */
+    background-color: white; /* Color de las teclas blancas */
+    border: 1px solid #000; /* Borde de las teclas blancas */
+    margin: 0 5px; /* Margen entre las teclas */
+    cursor: pointer;
+}
+
+/* Estilos para las teclas negras */
+.tecla-negra {
+    position: absolute;
+    width: 30px; /* Ancho de las teclas negras */
+    height: 100px; /* Altura de las teclas negras */
+    background-color: black; /* Color de las teclas negras */
+    margin: 0 -15px; /* Ajustar el margen para superponer las teclas negras */
+    z-index: 1; /* Colocar las teclas negras por encima de las teclas blancas */
+}
+
+/* Estilos para los botones cuando se les hace hover */
+.boton:hover {
+    background-color: #ddd; /* Cambiar el color de fondo al pasar el mouse */
+}
+
+/* Estilos para las teclas negras cuando se les hace hover */
+.tecla-negra:hover {
+    background-color: #555; /* Cambiar el color de fondo al pasar el mouse */
+}
